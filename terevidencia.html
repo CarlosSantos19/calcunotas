@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas ADSO</title>
+    <link rel="stylesheet" href="terevidencia.css">
+    <script defer src="terevidencia.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Notas ADSO</h1>
+    <form id="notasForm">
+        <div>
+            <label for="identidad">Identidad:</label>
+            <input type="text" id="identidad" name="identidad" required>
+        </div>
+        <div>
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+        </div>
+        <div>
+            <label for="notaProducto1">Nota Producto 1:</label>
+            <input type="number" id="notaProducto1" name="notaProducto1" required>
+        </div>
+        <div>
+            <label for="notaProducto2">Nota Producto 2:</label>
+            <input type="number" id="notaProducto2" name="notaProducto2" required>
+        </div>
+        <div>
+            <label for="notaProducto3">Nota Producto 3:</label>
+            <input type="number" id="notaProducto3" name="notaProducto3" required>
+        </div>
+        <div>
+            <label for="notaDesempeño1">Nota Desempeño 1:</label>
+            <input type="number" id="notaDesempeño1" name="notaDesempeño1" required>
+        </div>
+        <div>
+            <label for="notaDesempeño2">Nota Desempeño 2:</label>
+            <input type="number" id="notaDesempeño2" name="notaDesempeño2" required>
+        </div>
+        <div>
+            <label for="notaConocimiento">Nota Conocimiento:</label>
+            <input type="number" id="notaConocimiento" name="notaConocimiento" required>
+        </div>
+        <div>
+            <button type="button" onclick="calcularNota()">Calcular</button>
+            <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+        </div>
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
